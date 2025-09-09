@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
-    android:background="#B5E97B"
-    android:backgroundTint="#C3ED99"
+    android:background="#BFE97E"
+    android:backgroundTint="#BEE97E"
     tools:context=".ui.login.LoginActivity">
 
     <TextView

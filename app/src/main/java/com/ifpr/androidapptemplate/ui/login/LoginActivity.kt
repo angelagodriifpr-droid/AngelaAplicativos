@@ -105,7 +105,7 @@ class LoginActivity : AppCompatActivity() {
         } else {
             Toast.makeText(
                 applicationContext,
-                "Email ou senha incorretos",
+                "Email ou senha estão incorretos no vittafrut",
                 Toast.LENGTH_SHORT
             ).show()
         }

@@ -5,5 +5,6 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_profile">Profile</string>
     <!-- Home -->
-    <string name="welcome_home">BEM VINDO AO VITAFRUT </string>
+    <string name="welcome_home">Seja bem vindo ao aplicativo </string>
+    <string name="title_itens">Itens</string>
 </resources>

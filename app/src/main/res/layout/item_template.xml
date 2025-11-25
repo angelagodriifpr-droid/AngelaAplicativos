@@ -32,6 +32,30 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/item_fruta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fruta:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_quantidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantidade:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <!-- Campos futuros aqui -->
         </LinearLayout>
     </LinearLayout>

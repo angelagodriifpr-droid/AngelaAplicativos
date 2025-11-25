@@ -1,5 +1,6 @@
 package com.ifpr.androidapptemplate.ui.home
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -64,6 +65,7 @@ class HomeFragment : Fragment() {
         val databaseRef = FirebaseDatabase.getInstance().getReference("itens")
 
         databaseRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            @SuppressLint("MissingInflatedId")
             override fun onDataChange(snapshot: DataSnapshot) {
                 container.removeAllViews()
 
@@ -76,8 +78,16 @@ class HomeFragment : Fragment() {
 
                         val imageView = itemView.findViewById<ImageView>(R.id.item_image)
                         val enderecoView = itemView.findViewById<TextView>(R.id.item_endereco)
+                        val frutaView = itemView.findViewById<TextView>(R.id.item_fruta)
+                        val quantidadeView = itemView.findViewById<TextView>(R.id.item_quantidade)
+                        val nomeView = itemView.findViewById<TextView>(R.id.item_nome)
+
 
                         enderecoView.text = "Endereço: ${item.endereco ?: "Não informado"}"
+                        frutaView.text = "Fruta: ${item.fruta ?: "Não informado"}"
+                        quantidadeView.text = "Quantidade: ${item.quantidade ?: "Não informado"}"
+                        nomeView.text = "Nome: ${item.nome ?: "Não informado"}"
+
 
                         if (!item.imageUrl.isNullOrEmpty()) {
                             Glide.with(container.context).load(item.imageUrl).into(imageView)
